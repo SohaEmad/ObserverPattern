@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "46B6CD51-D6F9-4E57-8C86-B3566BC18D65"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46C90DA0-6327-4528-843D-6B50FBAD939D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MediatorExample/Mediator Pattern/BarometricSensorProcessor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "startDataProvider()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "46C90DA0-6327-4528-843D-6B50FBAD939D - 3ffd5d60d0ae9d2d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MediatorExample.BarometricDataProvider.startDataProvider() -&gt; ()"
+                  moduleName = "MediatorExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nathanziabek/Projects/MediatorExample/MediatorExample/Mediator%20Pattern/BarometricSensorProcessor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "46C90DA0-6327-4528-843D-6B50FBAD939D - 636a4784fd0158f2"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.CMAltitudeData&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MediatorExample.BarometricDataProvider.startDataProvider() -&gt; ()"
+                  moduleName = "MediatorExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nathanziabek/Projects/MediatorExample/MediatorExample/Mediator%20Pattern/BarometricSensorProcessor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "118">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03DF1FAD-E693-4A96-9237-0EB496FD8C74"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MediatorExample/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "getBaro(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
