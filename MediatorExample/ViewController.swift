@@ -11,32 +11,38 @@ import UIKit
 class ViewController: UIViewController {
     
     var manager: Manager? = nil
-    @IBOutlet weak var textView: UITextView!
+ 
+    @IBOutlet weak var accelXlabel: UILabel!
+    @IBOutlet weak var accelYlabel: UILabel!
+    @IBOutlet weak var accelZlabel: UILabel!
+    @IBOutlet weak var pressureLabel: UILabel!
     
-    @IBAction func startSystemButton(_ sender: Any) {
-        self.manager?.startSystem()
+    @IBOutlet weak var accelSwitch: UISwitch!
+    @IBOutlet weak var pressureSwitch: UISwitch!
+    @IBOutlet weak var systemSwitch: UISwitch!
+    
+    var accelListener:(NZAcceleration) -> (String, String, String) = { data in
+        let xValue = data.x.description
+        let yValue = data.y.description
+        let zValue = data.z.description
+        return(xValue, yValue, zValue)
     }
     
-    @IBAction func getBaro(_ sender: Any) {
-        guard let baroData = self.manager?.mediator.systemBarometricData else { return }
-        self.appendToTextField(textToAppend: baroData.description)
-    }
-    
-    @IBAction func getAccel(_ sender: Any) {
-        guard let accelData = self.manager?.mediator.systemAccelerometerData else { return }
-        self.appendToTextField(textToAppend: accelData.description)
+    var pressureListener:(NZBarometricPressure) -> (String) = { data in
+        let pressureValue = data.pressure.description
+        return(pressureValue)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.manager = Manager()
-        self.textView.text = ""
+
     }
     
-    func appendToTextField(textToAppend: String) {
-        self.textView.text = self.textView.text + "\n" + textToAppend
-        self.scrollTextViewToBottom(textView: self.textView)
-    }
+//    func appendToTextField(textToAppend: String) {
+//        self.textView.text = self.textView.text + "\n" + textToAppend
+//        self.scrollTextViewToBottom(textView: self.textView)
+//    }
     
     func scrollTextViewToBottom(textView: UITextView) {
         if textView.text.count > 0 {
@@ -44,6 +50,10 @@ class ViewController: UIViewController {
             let bottom = NSMakeRange(location, 1)
             textView.scrollRangeToVisible(bottom)
         }
+    }
+    
+    func deployListener() {
+        
     }
 
 

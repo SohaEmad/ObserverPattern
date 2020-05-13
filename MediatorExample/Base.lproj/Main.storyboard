@@ -143,6 +143,9 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="96Q-SB-4z2">
                                                 <rect key="frame" x="227" y="0.0" width="149" height="31"/>
+                                                <connections>
+                                                    <action selector="pressureSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="SuR-cr-ix6"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -175,6 +178,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="accelSwitch" destination="alS-25-8MK" id="64p-Uh-6In"/>
+                        <outlet property="accelXlabel" destination="vva-LI-JNY" id="olU-eW-ipZ"/>
+                        <outlet property="accelYlabel" destination="vva-LI-JNY" id="qCM-5d-v0E"/>
+                        <outlet property="accelZlabel" destination="hcX-Ws-sJS" id="LiJ-Nv-gYE"/>
+                        <outlet property="pressureLabel" destination="m1P-Ir-if2" id="OuV-yV-uvB"/>
+                        <outlet property="pressureSwitch" destination="96Q-SB-4z2" id="GrB-aG-2r4"/>
+                        <outlet property="systemSwitch" destination="xCs-kP-p3F" id="soP-Pb-rgF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
