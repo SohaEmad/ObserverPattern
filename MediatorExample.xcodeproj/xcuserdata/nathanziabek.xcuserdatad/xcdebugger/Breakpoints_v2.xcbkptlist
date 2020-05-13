@@ -68,5 +68,69 @@
             landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F55B14A5-743B-40C8-B0F0-8DFF250A5138"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MediatorExample/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "accelToggle(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F55B14A5-743B-40C8-B0F0-8DFF250A5138 - 94d4d2a23d78bf42"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MediatorExample.ViewController.accelToggle(__C.UISwitch) -&gt; ()"
+                  moduleName = "MediatorExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nathanziabek/Projects/MediatorExample/MediatorExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "F55B14A5-743B-40C8-B0F0-8DFF250A5138 - 6a6bd0fd983ba92d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MediatorExample.NZAcceleration) -&gt; () in MediatorExample.ViewController.accelToggle(__C.UISwitch) -&gt; ()"
+                  moduleName = "MediatorExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nathanziabek/Projects/MediatorExample/MediatorExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE291EB5-C18B-491E-B53A-4E58EC563C53"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MediatorExample/Mediator Pattern/Mediator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "systemAccelerometerData"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

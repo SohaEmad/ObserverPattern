@@ -17,25 +17,32 @@ class ViewController: UIViewController {
     @IBOutlet weak var accelZlabel: UILabel!
     @IBOutlet weak var pressureLabel: UILabel!
     
-    @IBOutlet weak var accelSwitch: UISwitch!
-    @IBOutlet weak var pressureSwitch: UISwitch!
-    @IBOutlet weak var systemSwitch: UISwitch!
-    
-    var accelListener:(NZAcceleration) -> (String, String, String) = { data in
-        let xValue = data.x.description
-        let yValue = data.y.description
-        let zValue = data.z.description
-        return(xValue, yValue, zValue)
+    @IBAction func accelToggle(_ sender: UISwitch) {
+        if sender.isOn {
+            self.manager?.mediator.accelListener = { data in
+                self.accelXlabel.text = data.x.description
+                self.accelYlabel.text = data.y.description
+                self.accelZlabel.text = data.z.description
+            }
+        } else {
+            self.manager?.mediator.accelListener = nil
+        }
     }
     
-    var pressureListener:(NZBarometricPressure) -> (String) = { data in
-        let pressureValue = data.pressure.description
-        return(pressureValue)
+    @IBAction func pressureToggle(_ sender: UISwitch) {
+        if sender.isOn {
+            self.manager?.mediator.barometricListener = { data in
+                self.pressureLabel.text = data.pressure.description
+            }
+        } else {
+            self.manager?.mediator.barometricListener = nil
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.manager = Manager()
+        self.manager?.startSystem()
 
     }
     
@@ -51,11 +58,5 @@ class ViewController: UIViewController {
             textView.scrollRangeToVisible(bottom)
         }
     }
-    
-    func deployListener() {
-        
-    }
-
-
 }
 
