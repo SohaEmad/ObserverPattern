@@ -107,9 +107,6 @@
 			children = (
 				EBB8EB642462C97000AFB268 /* Manager.swift */,
 				EBB8EB662462C9C400AFB268 /* Mediator.swift */,
-				EBB8EB732462D08C00AFB268 /* AccelerometerDataProcessor.swift */,
-				EB2782CB246AFF2C00B93547 /* BarometricSensorProcessor.swift */,
-				EB46E5A7246C80F0007DBC93 /* GPSDataProcessor.swift */,
 			);
 			path = "Mediator Pattern";
 			sourceTree = "<group>";
@@ -137,12 +134,12 @@
 		EBB8EB332462C91A00AFB268 /* MediatorExample */ = {
 			isa = PBXGroup;
 			children = (
+				EBCE8D1E246D8C53006A16EC /* Views */,
 				EB1F3937246B3500006CD713 /* Data Structures */,
 				EB2782C5246AF5B500B93547 /* Mediator Pattern */,
+				EBCE8D1D246D8C29006A16EC /* Data Regulators */,
 				EBB8EB342462C91A00AFB268 /* AppDelegate.swift */,
 				EBB8EB362462C91A00AFB268 /* SceneDelegate.swift */,
-				EBB8EB382462C91A00AFB268 /* ViewController.swift */,
-				EBB8EB3A2462C91A00AFB268 /* Main.storyboard */,
 				EBB8EB3D2462C91B00AFB268 /* Assets.xcassets */,
 				EBB8EB3F2462C91B00AFB268 /* LaunchScreen.storyboard */,
 				EBB8EB422462C91B00AFB268 /* Info.plist */,
@@ -166,6 +163,25 @@
 				EBB8EB582462C91C00AFB268 /* Info.plist */,
 			);
 			path = MediatorExampleUITests;
+			sourceTree = "<group>";
+		};
+		EBCE8D1D246D8C29006A16EC /* Data Regulators */ = {
+			isa = PBXGroup;
+			children = (
+				EBB8EB732462D08C00AFB268 /* AccelerometerDataProcessor.swift */,
+				EB2782CB246AFF2C00B93547 /* BarometricSensorProcessor.swift */,
+				EB46E5A7246C80F0007DBC93 /* GPSDataProcessor.swift */,
+			);
+			path = "Data Regulators";
+			sourceTree = "<group>";
+		};
+		EBCE8D1E246D8C53006A16EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBB8EB382462C91A00AFB268 /* ViewController.swift */,
+				EBB8EB3A2462C91A00AFB268 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
