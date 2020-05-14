@@ -10,6 +10,8 @@
 		EB1F3939246B3517006CD713 /* NZAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1F3938246B3517006CD713 /* NZAcceleration.swift */; };
 		EB1F393B246B352B006CD713 /* NZBarometricPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1F393A246B352B006CD713 /* NZBarometricPressure.swift */; };
 		EB2782CC246AFF2C00B93547 /* BarometricSensorProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2782CB246AFF2C00B93547 /* BarometricSensorProcessor.swift */; };
+		EB46E5A8246C80F0007DBC93 /* GPSDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB46E5A7246C80F0007DBC93 /* GPSDataProcessor.swift */; };
+		EB46E5AA246C8851007DBC93 /* NZLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB46E5A9246C8851007DBC93 /* NZLocation.swift */; };
 		EBB8EB352462C91A00AFB268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8EB342462C91A00AFB268 /* AppDelegate.swift */; };
 		EBB8EB372462C91A00AFB268 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8EB362462C91A00AFB268 /* SceneDelegate.swift */; };
 		EBB8EB392462C91A00AFB268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8EB382462C91A00AFB268 /* ViewController.swift */; };
@@ -44,6 +46,8 @@
 		EB1F3938246B3517006CD713 /* NZAcceleration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NZAcceleration.swift; sourceTree = "<group>"; };
 		EB1F393A246B352B006CD713 /* NZBarometricPressure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NZBarometricPressure.swift; sourceTree = "<group>"; };
 		EB2782CB246AFF2C00B93547 /* BarometricSensorProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarometricSensorProcessor.swift; sourceTree = "<group>"; };
+		EB46E5A7246C80F0007DBC93 /* GPSDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSDataProcessor.swift; sourceTree = "<group>"; };
+		EB46E5A9246C8851007DBC93 /* NZLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NZLocation.swift; sourceTree = "<group>"; };
 		EBB8EB312462C91A00AFB268 /* MediatorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediatorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB8EB342462C91A00AFB268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBB8EB362462C91A00AFB268 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 			children = (
 				EB1F3938246B3517006CD713 /* NZAcceleration.swift */,
 				EB1F393A246B352B006CD713 /* NZBarometricPressure.swift */,
+				EB46E5A9246C8851007DBC93 /* NZLocation.swift */,
 			);
 			path = "Data Structures";
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 				EBB8EB662462C9C400AFB268 /* Mediator.swift */,
 				EBB8EB732462D08C00AFB268 /* AccelerometerDataProcessor.swift */,
 				EB2782CB246AFF2C00B93547 /* BarometricSensorProcessor.swift */,
+				EB46E5A7246C80F0007DBC93 /* GPSDataProcessor.swift */,
 			);
 			path = "Mediator Pattern";
 			sourceTree = "<group>";
@@ -294,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB8EB392462C91A00AFB268 /* ViewController.swift in Sources */,
+				EB46E5AA246C8851007DBC93 /* NZLocation.swift in Sources */,
 				EB1F3939246B3517006CD713 /* NZAcceleration.swift in Sources */,
 				EBB8EB352462C91A00AFB268 /* AppDelegate.swift in Sources */,
 				EBB8EB742462D08C00AFB268 /* AccelerometerDataProcessor.swift in Sources */,
@@ -302,6 +309,7 @@
 				EB2782CC246AFF2C00B93547 /* BarometricSensorProcessor.swift in Sources */,
 				EB1F393B246B352B006CD713 /* NZBarometricPressure.swift in Sources */,
 				EBB8EB672462C9C400AFB268 /* Mediator.swift in Sources */,
+				EB46E5A8246C80F0007DBC93 /* GPSDataProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

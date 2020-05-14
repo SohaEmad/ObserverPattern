@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var accelYlabel: UILabel!
     @IBOutlet weak var accelZlabel: UILabel!
     @IBOutlet weak var pressureLabel: UILabel!
+    @IBOutlet weak var latitudeLabel: UILabel!
+    @IBOutlet weak var longitudeLabel: UILabel!
+    
+    let nilLabel: String = "nil"
     
     @IBAction func accelToggle(_ sender: UISwitch) {
         if sender.isOn {
@@ -26,6 +30,9 @@ class ViewController: UIViewController {
             }
         } else {
             self.manager?.mediator.accelListener = nil
+            self.accelXlabel.text = self.nilLabel
+            self.accelYlabel.text = self.nilLabel
+            self.accelZlabel.text = self.nilLabel
         }
     }
     
@@ -36,6 +43,20 @@ class ViewController: UIViewController {
             }
         } else {
             self.manager?.mediator.barometricListener = nil
+            self.pressureLabel.text = self.nilLabel
+        }
+    }
+    
+    @IBAction func gpsToggle(_ sender: UISwitch) {
+        if sender.isOn {
+            self.manager?.mediator.gpsLocationListener = { data in
+                self.latitudeLabel.text = data.latitude.description
+                self.longitudeLabel.text = data.longitude.description
+            }
+        } else {
+            self.manager?.mediator.gpsLocationListener = nil
+            self.latitudeLabel.text = self.nilLabel
+            self.longitudeLabel.text = self.nilLabel
         }
     }
     
@@ -43,13 +64,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.manager = Manager()
         self.manager?.startSystem()
-
+        
     }
     
-//    func appendToTextField(textToAppend: String) {
-//        self.textView.text = self.textView.text + "\n" + textToAppend
-//        self.scrollTextViewToBottom(textView: self.textView)
-//    }
+    //    func appendToTextField(textToAppend: String) {
+    //        self.textView.text = self.textView.text + "\n" + textToAppend
+    //        self.scrollTextViewToBottom(textView: self.textView)
+    //    }
     
     func scrollTextViewToBottom(textView: UITextView) {
         if textView.text.count > 0 {
