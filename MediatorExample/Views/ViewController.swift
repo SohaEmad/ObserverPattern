@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AccelerometerDataConsumerDelegate, BarometerDataConsumerDelegate, GPSDataConsumerDelegate {
+
+    
     
     var manager: Manager? = nil
  
@@ -19,64 +21,48 @@ class ViewController: UIViewController {
     @IBOutlet weak var latitudeLabel: UILabel!
     @IBOutlet weak var longitudeLabel: UILabel!
     
+    @IBOutlet weak var accelerationSwitch: UISwitch!
+    @IBOutlet weak var pressureSwitch: UISwitch!
+    @IBOutlet weak var gpsSwitch: UISwitch!
+    
     let nilLabel: String = "nil"
     
-    @IBAction func accelToggle(_ sender: UISwitch) {
-        if sender.isOn {
-            self.manager?.mediator.accelListener = { data in
-                self.accelXlabel.text = data.x.description
-                self.accelYlabel.text = data.y.description
-                self.accelZlabel.text = data.z.description
-            }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.manager = Manager()
+        self.manager!.startSystem()
+        self.manager!.requestAccelerometerDataSubscription(subscribeRequester: self)
+        self.manager!.requestBarometerDataSubscription(subscribeRequester: self)
+        self.manager!.requestGPSDataSubscription(subscribeRequester: self)
+    }
+    
+    func receiveAccelerometerData(accelerationData: NZAcceleration) {
+        if self.accelerationSwitch.isOn {
+            self.accelXlabel.text = accelerationData.x.description
+            self.accelYlabel.text = accelerationData.y.description
+            self.accelZlabel.text = accelerationData.z.description
         } else {
-            self.manager?.mediator.accelListener = nil
             self.accelXlabel.text = self.nilLabel
             self.accelYlabel.text = self.nilLabel
             self.accelZlabel.text = self.nilLabel
         }
     }
     
-    @IBAction func pressureToggle(_ sender: UISwitch) {
-        if sender.isOn {
-            self.manager?.mediator.barometricListener = { data in
-                self.pressureLabel.text = data.pressure.description
-            }
+    func receiveBarometricData(barometricData: NZBarometricPressure) {
+        if self.pressureSwitch.isOn {
+            self.pressureLabel.text = barometricData.pressure.description
         } else {
-            self.manager?.mediator.barometricListener = nil
             self.pressureLabel.text = self.nilLabel
         }
     }
     
-    @IBAction func gpsToggle(_ sender: UISwitch) {
-        if sender.isOn {
-            self.manager?.mediator.gpsLocationListener = { data in
-                self.latitudeLabel.text = data.latitude.description
-                self.longitudeLabel.text = data.longitude.description
-            }
+    func receiveGPSData(gpsData: NZLocation) {
+        if self.gpsSwitch.isOn {
+            self.latitudeLabel.text = gpsData.latitude.description
+            self.longitudeLabel.text = gpsData.longitude.description
         } else {
-            self.manager?.mediator.gpsLocationListener = nil
             self.latitudeLabel.text = self.nilLabel
             self.longitudeLabel.text = self.nilLabel
-        }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.manager = Manager()
-        self.manager?.startSystem()
-        
-    }
-    
-    //    func appendToTextField(textToAppend: String) {
-    //        self.textView.text = self.textView.text + "\n" + textToAppend
-    //        self.scrollTextViewToBottom(textView: self.textView)
-    //    }
-    
-    func scrollTextViewToBottom(textView: UITextView) {
-        if textView.text.count > 0 {
-            let location = textView.text.count - 1
-            let bottom = NSMakeRange(location, 1)
-            textView.scrollRangeToVisible(bottom)
         }
     }
 }

@@ -3,11 +3,11 @@ import Foundation
 
 class AccelerometerDataProvider{
     
-    weak var mediator: Mediator?
+    weak var dataMediator: ProviderToMediatorDataDelegate?
     let motionManager: CMMotionManager
     
-    init(mediator: Mediator, motionManager: CMMotionManager) {
-        self.mediator = mediator
+    init(dataMediator: ProviderToMediatorDataDelegate, motionManager: CMMotionManager) {
+        self.dataMediator = dataMediator
         self.motionManager = motionManager
     }
     
@@ -21,7 +21,7 @@ class AccelerometerDataProvider{
             let processedData = NZAcceleration(x: data.acceleration.x, y: data.acceleration.y, z: data.acceleration.z)
             print(processedData.description)
             
-            self.mediator?.systemAccelerometerData = processedData
+            self.dataMediator?.acceleromterDataReceiver(accelerationData: processedData)
         }
     }
 }

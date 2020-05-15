@@ -177,9 +177,6 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Oi3-72-6Pd">
                                                 <rect key="frame" x="227" y="0.0" width="149" height="31"/>
-                                                <connections>
-                                                    <action selector="accelToggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rcd-zf-Ph6"/>
-                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -194,9 +191,6 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="96Q-SB-4z2">
                                                 <rect key="frame" x="227" y="0.0" width="149" height="31"/>
-                                                <connections>
-                                                    <action selector="pressureToggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="ot8-Lg-rQf"/>
-                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -211,9 +205,6 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="alS-25-8MK">
                                                 <rect key="frame" x="227" y="0.0" width="149" height="31"/>
-                                                <connections>
-                                                    <action selector="gpsToggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="DNl-FU-Beh"/>
-                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -236,9 +227,12 @@
                         <outlet property="accelXlabel" destination="DuD-i5-Eoh" id="Zz6-qY-qhR"/>
                         <outlet property="accelYlabel" destination="vva-LI-JNY" id="qCM-5d-v0E"/>
                         <outlet property="accelZlabel" destination="hcX-Ws-sJS" id="LiJ-Nv-gYE"/>
+                        <outlet property="accelerationSwitch" destination="Oi3-72-6Pd" id="8wZ-PZ-htD"/>
+                        <outlet property="gpsSwitch" destination="alS-25-8MK" id="Ek2-K6-I6n"/>
                         <outlet property="latitudeLabel" destination="Zx0-fS-czi" id="JP9-Tm-JoE"/>
                         <outlet property="longitudeLabel" destination="IGS-Ke-D9G" id="X7P-jh-VaE"/>
                         <outlet property="pressureLabel" destination="m1P-Ir-if2" id="OuV-yV-uvB"/>
+                        <outlet property="pressureSwitch" destination="96Q-SB-4z2" id="lwo-Oy-y5x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

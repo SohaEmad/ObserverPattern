@@ -15,9 +15,9 @@ class Manager {
     
     init() {
         self.mediator = Mediator()
-        self.accelerometerDataProvider = AccelerometerDataProvider(mediator: self.mediator, motionManager: self.motionManager)
-        self.barometricDataProvider = BarometricDataProvider(mediator: self.mediator, altimiter: self.altimeter)
-        self.gpsDataProvider = GPSDataProvider(mediator: self.mediator, motionManager: self.locationManager)
+        self.accelerometerDataProvider = AccelerometerDataProvider(dataMediator: self.mediator, motionManager: self.motionManager)
+        self.barometricDataProvider = BarometricDataProvider(dataMediator: self.mediator, altimiter: self.altimeter)
+        self.gpsDataProvider = GPSDataProvider(dataMediator: self.mediator, motionManager: self.locationManager)
     }
     
     func startSystem() {
@@ -25,5 +25,17 @@ class Manager {
         self.accelerometerDataProvider?.startDataProvider()
         self.barometricDataProvider?.startDataProvider()
         self.gpsDataProvider?.startDataProvider()
+    }
+    
+    func requestAccelerometerDataSubscription(subscribeRequester: AccelerometerDataConsumerDelegate) {
+        self.mediator.accelerometerDataConsumers.append(subscribeRequester)
+    }
+    
+    func requestBarometerDataSubscription(subscribeRequester: BarometerDataConsumerDelegate) {
+        self.mediator.barometerDataConsumers.append(subscribeRequester)
+    }
+    
+    func requestGPSDataSubscription(subscribeRequester: GPSDataConsumerDelegate) {
+        self.mediator.gpsDataConsumers.append(subscribeRequester)
     }
 }

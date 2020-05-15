@@ -23,6 +23,7 @@
 		EBB8EB652462C97000AFB268 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8EB642462C97000AFB268 /* Manager.swift */; };
 		EBB8EB672462C9C400AFB268 /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8EB662462C9C400AFB268 /* Mediator.swift */; };
 		EBB8EB742462D08C00AFB268 /* AccelerometerDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8EB732462D08C00AFB268 /* AccelerometerDataProcessor.swift */; };
+		EBCE8D20246D91FC006A16EC /* providerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCE8D1F246D91FC006A16EC /* providerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		EBB8EB642462C97000AFB268 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		EBB8EB662462C9C400AFB268 /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
 		EBB8EB732462D08C00AFB268 /* AccelerometerDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerDataProcessor.swift; sourceTree = "<group>"; };
+		EBCE8D1F246D91FC006A16EC /* providerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = providerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				EBB8EB642462C97000AFB268 /* Manager.swift */,
 				EBB8EB662462C9C400AFB268 /* Mediator.swift */,
+				EBCE8D1F246D91FC006A16EC /* providerProtocol.swift */,
 			);
 			path = "Mediator Pattern";
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			files = (
 				EBB8EB392462C91A00AFB268 /* ViewController.swift in Sources */,
 				EB46E5AA246C8851007DBC93 /* NZLocation.swift in Sources */,
+				EBCE8D20246D91FC006A16EC /* providerProtocol.swift in Sources */,
 				EB1F3939246B3517006CD713 /* NZAcceleration.swift in Sources */,
 				EBB8EB352462C91A00AFB268 /* AppDelegate.swift in Sources */,
 				EBB8EB742462D08C00AFB268 /* AccelerometerDataProcessor.swift in Sources */,
