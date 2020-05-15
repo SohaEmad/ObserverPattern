@@ -3,11 +3,11 @@ import Foundation
 
 class AccelerometerDataProvider{
     
-    weak var dataMediator: ProviderToMediatorDataDelegate?
     let motionManager: CMMotionManager
     
-    init(dataMediator: ProviderToMediatorDataDelegate, motionManager: CMMotionManager) {
-        self.dataMediator = dataMediator
+    var accelerometerDataConsumers: [AccelerometerDataConsumerDelegate] = []
+    
+    init(motionManager: CMMotionManager) {
         self.motionManager = motionManager
     }
     
@@ -19,9 +19,12 @@ class AccelerometerDataProvider{
             // Conversion of the data to an agreed format can happen here
             // At the moment we are just converting putting the data into a custom type
             let processedData = NZAcceleration(x: data.acceleration.x, y: data.acceleration.y, z: data.acceleration.z)
-            print(processedData.description)
             
-            self.dataMediator?.acceleromterDataReceiver(accelerationData: processedData)
+            // Print a logged description of the data and send to the consumers
+            print(processedData.description)
+            for consumer in self.accelerometerDataConsumers {
+                consumer.receiveAccelerometerData(accelerationData: processedData)
+            }
         }
     }
 }

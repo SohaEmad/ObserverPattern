@@ -3,11 +3,11 @@ import Foundation
 
 class BarometricDataProvider {
     
-    weak var dataMediator: ProviderToMediatorDataDelegate?
     let altimiter: CMAltimeter
     
-    init(dataMediator: ProviderToMediatorDataDelegate, altimiter: CMAltimeter) {
-        self.dataMediator = dataMediator
+    var barometerDataConsumers: [BarometerDataConsumerDelegate] = []
+    
+    init(altimiter: CMAltimeter) {
         self.altimiter = altimiter
     }
     
@@ -19,9 +19,12 @@ class BarometricDataProvider {
             // Conversion of the data to an agreed format can happen here
             // At the moment we are just converting putting the data into a custom type
             let processedData = NZBarometricPressure(pressureValue: Double(data.pressure.floatValue))
-            print(processedData.description)
             
-            self.dataMediator?.baromatricDataReceiver(barometerData: processedData)
+            // Print a logged description of the data and send to the consumers
+            print(processedData.description)
+            for consumer in self.barometerDataConsumers {
+                consumer.receiveBarometricData(barometricData: processedData)
+            }
         }
     }
 }

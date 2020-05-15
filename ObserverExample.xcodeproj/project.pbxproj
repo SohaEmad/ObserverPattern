@@ -21,7 +21,6 @@
 		EBB8EB4C2462C91C00AFB268 /* MediatorExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8EB4B2462C91C00AFB268 /* MediatorExampleTests.swift */; };
 		EBB8EB572462C91C00AFB268 /* MediatorExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8EB562462C91C00AFB268 /* MediatorExampleUITests.swift */; };
 		EBB8EB652462C97000AFB268 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8EB642462C97000AFB268 /* Manager.swift */; };
-		EBB8EB672462C9C400AFB268 /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8EB662462C9C400AFB268 /* Mediator.swift */; };
 		EBB8EB742462D08C00AFB268 /* AccelerometerDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8EB732462D08C00AFB268 /* AccelerometerDataProcessor.swift */; };
 		EBCE8D20246D91FC006A16EC /* providerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCE8D1F246D91FC006A16EC /* providerProtocol.swift */; };
 /* End PBXBuildFile section */
@@ -64,7 +63,6 @@
 		EBB8EB562462C91C00AFB268 /* MediatorExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorExampleUITests.swift; sourceTree = "<group>"; };
 		EBB8EB582462C91C00AFB268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBB8EB642462C97000AFB268 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
-		EBB8EB662462C9C400AFB268 /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
 		EBB8EB732462D08C00AFB268 /* AccelerometerDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerDataProcessor.swift; sourceTree = "<group>"; };
 		EBCE8D1F246D91FC006A16EC /* providerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = providerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				EBB8EB642462C97000AFB268 /* Manager.swift */,
-				EBB8EB662462C9C400AFB268 /* Mediator.swift */,
 				EBCE8D1F246D91FC006A16EC /* providerProtocol.swift */,
 			);
 			path = "Observer Pattern";
@@ -328,7 +325,6 @@
 				EBB8EB652462C97000AFB268 /* Manager.swift in Sources */,
 				EB2782CC246AFF2C00B93547 /* BarometricSensorProcessor.swift in Sources */,
 				EB1F393B246B352B006CD713 /* NZBarometricPressure.swift in Sources */,
-				EBB8EB672462C9C400AFB268 /* Mediator.swift in Sources */,
 				EB46E5A8246C80F0007DBC93 /* GPSDataProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

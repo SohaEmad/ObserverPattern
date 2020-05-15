@@ -3,13 +3,13 @@ import Foundation
 
 class GPSDataProvider: NSObject, CLLocationManagerDelegate{
     
-    weak var dataMediator: ProviderToMediatorDataDelegate?
     let locationManager: CLLocationManager?
+    
+    var gpsDataConsumers: [GPSDataConsumerDelegate] = []
     
     var authorisation: Bool = false
     
-    init(dataMediator: ProviderToMediatorDataDelegate, motionManager: CLLocationManager) {
-        self.dataMediator = dataMediator
+    init(motionManager: CLLocationManager) {
         self.locationManager = motionManager
     }
     
@@ -37,8 +37,12 @@ class GPSDataProvider: NSObject, CLLocationManagerDelegate{
         // Conversion of the data to an agreed format can happen here
         // At the moment we are just converting putting the data into a custom type
         let processedLocation = NZLocation(latitude: location.latitude, longitude: location.longitude)
+        
+        // Print a logged description of the data and send to the consumers
         print(processedLocation.description)
-        self.dataMediator?.gpsDataReceiver(gpsData: processedLocation)
+        for consumer in self.gpsDataConsumers {
+            consumer.receiveGPSData(gpsData: processedLocation)
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
