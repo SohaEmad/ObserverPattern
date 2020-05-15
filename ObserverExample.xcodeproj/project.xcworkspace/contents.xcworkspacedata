@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MediatorExample.xcodeproj">
+      location = "self:/Users/nathanziabek/Projects/OberverPattern/ObserverExample.xcodeproj">
    </FileRef>
 </Workspace>

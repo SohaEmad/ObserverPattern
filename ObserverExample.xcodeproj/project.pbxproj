@@ -49,7 +49,7 @@
 		EB2782CB246AFF2C00B93547 /* BarometricSensorProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarometricSensorProcessor.swift; sourceTree = "<group>"; };
 		EB46E5A7246C80F0007DBC93 /* GPSDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSDataProcessor.swift; sourceTree = "<group>"; };
 		EB46E5A9246C8851007DBC93 /* NZLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NZLocation.swift; sourceTree = "<group>"; };
-		EBB8EB312462C91A00AFB268 /* MediatorExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediatorExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB8EB312462C91A00AFB268 /* ObserverExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObserverExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB8EB342462C91A00AFB268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBB8EB362462C91A00AFB268 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EBB8EB382462C91A00AFB268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,10 +57,10 @@
 		EBB8EB3D2462C91B00AFB268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBB8EB402462C91B00AFB268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBB8EB422462C91B00AFB268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBB8EB472462C91B00AFB268 /* MediatorExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediatorExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB8EB472462C91B00AFB268 /* ObserverExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserverExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB8EB4B2462C91C00AFB268 /* MediatorExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorExampleTests.swift; sourceTree = "<group>"; };
 		EBB8EB4D2462C91C00AFB268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBB8EB522462C91C00AFB268 /* MediatorExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediatorExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB8EB522462C91C00AFB268 /* ObserverExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserverExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB8EB562462C91C00AFB268 /* MediatorExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorExampleUITests.swift; sourceTree = "<group>"; };
 		EBB8EB582462C91C00AFB268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBB8EB642462C97000AFB268 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
@@ -104,22 +104,22 @@
 			path = "Data Structures";
 			sourceTree = "<group>";
 		};
-		EB2782C5246AF5B500B93547 /* Mediator Pattern */ = {
+		EB2782C5246AF5B500B93547 /* Observer Pattern */ = {
 			isa = PBXGroup;
 			children = (
 				EBB8EB642462C97000AFB268 /* Manager.swift */,
 				EBB8EB662462C9C400AFB268 /* Mediator.swift */,
 				EBCE8D1F246D91FC006A16EC /* providerProtocol.swift */,
 			);
-			path = "Mediator Pattern";
+			path = "Observer Pattern";
 			sourceTree = "<group>";
 		};
 		EBB8EB282462C91A00AFB268 = {
 			isa = PBXGroup;
 			children = (
-				EBB8EB332462C91A00AFB268 /* MediatorExample */,
-				EBB8EB4A2462C91C00AFB268 /* MediatorExampleTests */,
-				EBB8EB552462C91C00AFB268 /* MediatorExampleUITests */,
+				EBB8EB332462C91A00AFB268 /* ObserverExample */,
+				EBB8EB4A2462C91C00AFB268 /* ObserverExampleTests */,
+				EBB8EB552462C91C00AFB268 /* ObserverExampleUITests */,
 				EBB8EB322462C91A00AFB268 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,19 +127,19 @@
 		EBB8EB322462C91A00AFB268 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EBB8EB312462C91A00AFB268 /* MediatorExample.app */,
-				EBB8EB472462C91B00AFB268 /* MediatorExampleTests.xctest */,
-				EBB8EB522462C91C00AFB268 /* MediatorExampleUITests.xctest */,
+				EBB8EB312462C91A00AFB268 /* ObserverExample.app */,
+				EBB8EB472462C91B00AFB268 /* ObserverExampleTests.xctest */,
+				EBB8EB522462C91C00AFB268 /* ObserverExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EBB8EB332462C91A00AFB268 /* MediatorExample */ = {
+		EBB8EB332462C91A00AFB268 /* ObserverExample */ = {
 			isa = PBXGroup;
 			children = (
 				EBCE8D1E246D8C53006A16EC /* Views */,
 				EB1F3937246B3500006CD713 /* Data Structures */,
-				EB2782C5246AF5B500B93547 /* Mediator Pattern */,
+				EB2782C5246AF5B500B93547 /* Observer Pattern */,
 				EBCE8D1D246D8C29006A16EC /* Data Regulators */,
 				EBB8EB342462C91A00AFB268 /* AppDelegate.swift */,
 				EBB8EB362462C91A00AFB268 /* SceneDelegate.swift */,
@@ -147,25 +147,25 @@
 				EBB8EB3F2462C91B00AFB268 /* LaunchScreen.storyboard */,
 				EBB8EB422462C91B00AFB268 /* Info.plist */,
 			);
-			path = MediatorExample;
+			path = ObserverExample;
 			sourceTree = "<group>";
 		};
-		EBB8EB4A2462C91C00AFB268 /* MediatorExampleTests */ = {
+		EBB8EB4A2462C91C00AFB268 /* ObserverExampleTests */ = {
 			isa = PBXGroup;
 			children = (
 				EBB8EB4B2462C91C00AFB268 /* MediatorExampleTests.swift */,
 				EBB8EB4D2462C91C00AFB268 /* Info.plist */,
 			);
-			path = MediatorExampleTests;
+			path = ObserverExampleTests;
 			sourceTree = "<group>";
 		};
-		EBB8EB552462C91C00AFB268 /* MediatorExampleUITests */ = {
+		EBB8EB552462C91C00AFB268 /* ObserverExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
 				EBB8EB562462C91C00AFB268 /* MediatorExampleUITests.swift */,
 				EBB8EB582462C91C00AFB268 /* Info.plist */,
 			);
-			path = MediatorExampleUITests;
+			path = ObserverExampleUITests;
 			sourceTree = "<group>";
 		};
 		EBCE8D1D246D8C29006A16EC /* Data Regulators */ = {
@@ -190,9 +190,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EBB8EB302462C91A00AFB268 /* MediatorExample */ = {
+		EBB8EB302462C91A00AFB268 /* ObserverExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBB8EB5B2462C91C00AFB268 /* Build configuration list for PBXNativeTarget "MediatorExample" */;
+			buildConfigurationList = EBB8EB5B2462C91C00AFB268 /* Build configuration list for PBXNativeTarget "ObserverExample" */;
 			buildPhases = (
 				EBB8EB2D2462C91A00AFB268 /* Sources */,
 				EBB8EB2E2462C91A00AFB268 /* Frameworks */,
@@ -202,14 +202,14 @@
 			);
 			dependencies = (
 			);
-			name = MediatorExample;
+			name = ObserverExample;
 			productName = MediatorExample;
-			productReference = EBB8EB312462C91A00AFB268 /* MediatorExample.app */;
+			productReference = EBB8EB312462C91A00AFB268 /* ObserverExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EBB8EB462462C91B00AFB268 /* MediatorExampleTests */ = {
+		EBB8EB462462C91B00AFB268 /* ObserverExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBB8EB5E2462C91C00AFB268 /* Build configuration list for PBXNativeTarget "MediatorExampleTests" */;
+			buildConfigurationList = EBB8EB5E2462C91C00AFB268 /* Build configuration list for PBXNativeTarget "ObserverExampleTests" */;
 			buildPhases = (
 				EBB8EB432462C91B00AFB268 /* Sources */,
 				EBB8EB442462C91B00AFB268 /* Frameworks */,
@@ -220,14 +220,14 @@
 			dependencies = (
 				EBB8EB492462C91C00AFB268 /* PBXTargetDependency */,
 			);
-			name = MediatorExampleTests;
+			name = ObserverExampleTests;
 			productName = MediatorExampleTests;
-			productReference = EBB8EB472462C91B00AFB268 /* MediatorExampleTests.xctest */;
+			productReference = EBB8EB472462C91B00AFB268 /* ObserverExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EBB8EB512462C91C00AFB268 /* MediatorExampleUITests */ = {
+		EBB8EB512462C91C00AFB268 /* ObserverExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBB8EB612462C91C00AFB268 /* Build configuration list for PBXNativeTarget "MediatorExampleUITests" */;
+			buildConfigurationList = EBB8EB612462C91C00AFB268 /* Build configuration list for PBXNativeTarget "ObserverExampleUITests" */;
 			buildPhases = (
 				EBB8EB4E2462C91C00AFB268 /* Sources */,
 				EBB8EB4F2462C91C00AFB268 /* Frameworks */,
@@ -238,9 +238,9 @@
 			dependencies = (
 				EBB8EB542462C91C00AFB268 /* PBXTargetDependency */,
 			);
-			name = MediatorExampleUITests;
+			name = ObserverExampleUITests;
 			productName = MediatorExampleUITests;
-			productReference = EBB8EB522462C91C00AFB268 /* MediatorExampleUITests.xctest */;
+			productReference = EBB8EB522462C91C00AFB268 /* ObserverExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -251,7 +251,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = LivingMap;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					EBB8EB302462C91A00AFB268 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -266,7 +266,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EBB8EB2C2462C91A00AFB268 /* Build configuration list for PBXProject "MediatorExample" */;
+			buildConfigurationList = EBB8EB2C2462C91A00AFB268 /* Build configuration list for PBXProject "ObserverExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -279,9 +279,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EBB8EB302462C91A00AFB268 /* MediatorExample */,
-				EBB8EB462462C91B00AFB268 /* MediatorExampleTests */,
-				EBB8EB512462C91C00AFB268 /* MediatorExampleUITests */,
+				EBB8EB302462C91A00AFB268 /* ObserverExample */,
+				EBB8EB462462C91B00AFB268 /* ObserverExampleTests */,
+				EBB8EB512462C91C00AFB268 /* ObserverExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -354,12 +354,12 @@
 /* Begin PBXTargetDependency section */
 		EBB8EB492462C91C00AFB268 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EBB8EB302462C91A00AFB268 /* MediatorExample */;
+			target = EBB8EB302462C91A00AFB268 /* ObserverExample */;
 			targetProxy = EBB8EB482462C91C00AFB268 /* PBXContainerItemProxy */;
 		};
 		EBB8EB542462C91C00AFB268 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EBB8EB302462C91A00AFB268 /* MediatorExample */;
+			target = EBB8EB302462C91A00AFB268 /* ObserverExample */;
 			targetProxy = EBB8EB532462C91C00AFB268 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -504,12 +504,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5GE248894;
-				INFOPLIST_FILE = MediatorExample/Info.plist;
+				INFOPLIST_FILE = ObserverExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = NathanZiabek.MediatorExample;
+				PRODUCT_BUNDLE_IDENTIFIER = NathanZiabek.OberverExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -522,12 +522,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5GE248894;
-				INFOPLIST_FILE = MediatorExample/Info.plist;
+				INFOPLIST_FILE = ObserverExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = NathanZiabek.MediatorExample;
+				PRODUCT_BUNDLE_IDENTIFIER = NathanZiabek.OberverExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,7 +552,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediatorExample.app/MediatorExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObserverExample.app/ObserverExample";
 			};
 			name = Debug;
 		};
@@ -574,7 +574,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediatorExample.app/MediatorExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObserverExample.app/ObserverExample";
 			};
 			name = Release;
 		};
@@ -621,7 +621,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EBB8EB2C2462C91A00AFB268 /* Build configuration list for PBXProject "MediatorExample" */ = {
+		EBB8EB2C2462C91A00AFB268 /* Build configuration list for PBXProject "ObserverExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EBB8EB592462C91C00AFB268 /* Debug */,
@@ -630,7 +630,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBB8EB5B2462C91C00AFB268 /* Build configuration list for PBXNativeTarget "MediatorExample" */ = {
+		EBB8EB5B2462C91C00AFB268 /* Build configuration list for PBXNativeTarget "ObserverExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EBB8EB5C2462C91C00AFB268 /* Debug */,
@@ -639,7 +639,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBB8EB5E2462C91C00AFB268 /* Build configuration list for PBXNativeTarget "MediatorExampleTests" */ = {
+		EBB8EB5E2462C91C00AFB268 /* Build configuration list for PBXNativeTarget "ObserverExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EBB8EB5F2462C91C00AFB268 /* Debug */,
@@ -648,7 +648,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBB8EB612462C91C00AFB268 /* Build configuration list for PBXNativeTarget "MediatorExampleUITests" */ = {
+		EBB8EB612462C91C00AFB268 /* Build configuration list for PBXNativeTarget "ObserverExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EBB8EB622462C91C00AFB268 /* Debug */,
