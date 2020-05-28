@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import MediatorExample
+//@testable import MediatorExample
 
 class MediatorExampleTests: XCTestCase {
 

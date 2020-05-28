@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1AD0863247EC6A2000EFD81 /* RotationDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD0862247EC6A2000EFD81 /* RotationDataProcessor.swift */; };
+		E1AD0865247EC6D6000EFD81 /* QuaternionDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD0864247EC6D6000EFD81 /* QuaternionDataProcessor.swift */; };
+		E1AD0867247EC98D000EFD81 /* BlutoothDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD0866247EC98D000EFD81 /* BlutoothDataProcessor.swift */; };
+		E1AD0869247ECAC3000EFD81 /* BeaconDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD0868247ECAC3000EFD81 /* BeaconDataProcessor.swift */; };
+		E1AD086B247ECAEB000EFD81 /* HeadingDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD086A247ECAEB000EFD81 /* HeadingDataProcessor.swift */; };
+		E1AD086E247ECB24000EFD81 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD086D247ECB24000EFD81 /* MotionManager.swift */; };
+		E1AD0870247ECB60000EFD81 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD086F247ECB60000EFD81 /* BluetoothManager.swift */; };
+		E1AD0872247ECB77000EFD81 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD0871247ECB77000EFD81 /* LocationManager.swift */; };
+		E1AD0874247EE074000EFD81 /* SARotationMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD0873247EE074000EFD81 /* SARotationMatrix.swift */; };
+		E1AD0876247EE0A2000EFD81 /* SAQuaternion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD0875247EE0A2000EFD81 /* SAQuaternion.swift */; };
+		E1AD0878247EE29E000EFD81 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD0877247EE29E000EFD81 /* Provider.swift */; };
 		EB1F3939246B3517006CD713 /* NZAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1F3938246B3517006CD713 /* NZAcceleration.swift */; };
 		EB1F393B246B352B006CD713 /* NZBarometricPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1F393A246B352B006CD713 /* NZBarometricPressure.swift */; };
 		EB2782CC246AFF2C00B93547 /* BarometricSensorProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2782CB246AFF2C00B93547 /* BarometricSensorProcessor.swift */; };
@@ -43,6 +54,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1AD0862247EC6A2000EFD81 /* RotationDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationDataProcessor.swift; sourceTree = "<group>"; };
+		E1AD0864247EC6D6000EFD81 /* QuaternionDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuaternionDataProcessor.swift; sourceTree = "<group>"; };
+		E1AD0866247EC98D000EFD81 /* BlutoothDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlutoothDataProcessor.swift; sourceTree = "<group>"; };
+		E1AD0868247ECAC3000EFD81 /* BeaconDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDataProcessor.swift; sourceTree = "<group>"; };
+		E1AD086A247ECAEB000EFD81 /* HeadingDataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingDataProcessor.swift; sourceTree = "<group>"; };
+		E1AD086D247ECB24000EFD81 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		E1AD086F247ECB60000EFD81 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		E1AD0871247ECB77000EFD81 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E1AD0873247EE074000EFD81 /* SARotationMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SARotationMatrix.swift; sourceTree = "<group>"; };
+		E1AD0875247EE0A2000EFD81 /* SAQuaternion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAQuaternion.swift; sourceTree = "<group>"; };
+		E1AD0877247EE29E000EFD81 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		EB1F3938246B3517006CD713 /* NZAcceleration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NZAcceleration.swift; sourceTree = "<group>"; };
 		EB1F393A246B352B006CD713 /* NZBarometricPressure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NZBarometricPressure.swift; sourceTree = "<group>"; };
 		EB2782CB246AFF2C00B93547 /* BarometricSensorProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarometricSensorProcessor.swift; sourceTree = "<group>"; };
@@ -92,12 +114,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E1AD086C247ECB07000EFD81 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E1AD086D247ECB24000EFD81 /* MotionManager.swift */,
+				E1AD086F247ECB60000EFD81 /* BluetoothManager.swift */,
+				E1AD0871247ECB77000EFD81 /* LocationManager.swift */,
+				E1AD0877247EE29E000EFD81 /* Provider.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		EB1F3937246B3500006CD713 /* Data Structures */ = {
 			isa = PBXGroup;
 			children = (
 				EB1F3938246B3517006CD713 /* NZAcceleration.swift */,
 				EB1F393A246B352B006CD713 /* NZBarometricPressure.swift */,
 				EB46E5A9246C8851007DBC93 /* NZLocation.swift */,
+				E1AD0873247EE074000EFD81 /* SARotationMatrix.swift */,
+				E1AD0875247EE0A2000EFD81 /* SAQuaternion.swift */,
 			);
 			path = "Data Structures";
 			sourceTree = "<group>";
@@ -134,6 +169,7 @@
 		EBB8EB332462C91A00AFB268 /* ObserverExample */ = {
 			isa = PBXGroup;
 			children = (
+				E1AD086C247ECB07000EFD81 /* Managers */,
 				EBCE8D1E246D8C53006A16EC /* Views */,
 				EB1F3937246B3500006CD713 /* Data Structures */,
 				EB2782C5246AF5B500B93547 /* Observer Pattern */,
@@ -171,6 +207,11 @@
 				EBB8EB732462D08C00AFB268 /* AccelerometerDataProcessor.swift */,
 				EB2782CB246AFF2C00B93547 /* BarometricSensorProcessor.swift */,
 				EB46E5A7246C80F0007DBC93 /* GPSDataProcessor.swift */,
+				E1AD0862247EC6A2000EFD81 /* RotationDataProcessor.swift */,
+				E1AD0864247EC6D6000EFD81 /* QuaternionDataProcessor.swift */,
+				E1AD0866247EC98D000EFD81 /* BlutoothDataProcessor.swift */,
+				E1AD0868247ECAC3000EFD81 /* BeaconDataProcessor.swift */,
+				E1AD086A247ECAEB000EFD81 /* HeadingDataProcessor.swift */,
 			);
 			path = "Data Regulators";
 			sourceTree = "<group>";
@@ -315,17 +356,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1AD0876247EE0A2000EFD81 /* SAQuaternion.swift in Sources */,
 				EBB8EB392462C91A00AFB268 /* ViewController.swift in Sources */,
 				EB46E5AA246C8851007DBC93 /* NZLocation.swift in Sources */,
 				EBCE8D20246D91FC006A16EC /* providerProtocol.swift in Sources */,
+				E1AD0869247ECAC3000EFD81 /* BeaconDataProcessor.swift in Sources */,
 				EB1F3939246B3517006CD713 /* NZAcceleration.swift in Sources */,
+				E1AD0863247EC6A2000EFD81 /* RotationDataProcessor.swift in Sources */,
 				EBB8EB352462C91A00AFB268 /* AppDelegate.swift in Sources */,
 				EBB8EB742462D08C00AFB268 /* AccelerometerDataProcessor.swift in Sources */,
 				EBB8EB372462C91A00AFB268 /* SceneDelegate.swift in Sources */,
 				EBB8EB652462C97000AFB268 /* Manager.swift in Sources */,
+				E1AD086E247ECB24000EFD81 /* MotionManager.swift in Sources */,
 				EB2782CC246AFF2C00B93547 /* BarometricSensorProcessor.swift in Sources */,
 				EB1F393B246B352B006CD713 /* NZBarometricPressure.swift in Sources */,
+				E1AD0867247EC98D000EFD81 /* BlutoothDataProcessor.swift in Sources */,
 				EB46E5A8246C80F0007DBC93 /* GPSDataProcessor.swift in Sources */,
+				E1AD0865247EC6D6000EFD81 /* QuaternionDataProcessor.swift in Sources */,
+				E1AD0870247ECB60000EFD81 /* BluetoothManager.swift in Sources */,
+				E1AD0872247ECB77000EFD81 /* LocationManager.swift in Sources */,
+				E1AD0878247EE29E000EFD81 /* Provider.swift in Sources */,
+				E1AD0874247EE074000EFD81 /* SARotationMatrix.swift in Sources */,
+				E1AD086B247ECAEB000EFD81 /* HeadingDataProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +551,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W5GE248894;
+				DEVELOPMENT_TEAM = 7TFSMTYA2J;
 				INFOPLIST_FILE = ObserverExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -517,7 +569,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W5GE248894;
+				DEVELOPMENT_TEAM = 7TFSMTYA2J;
 				INFOPLIST_FILE = ObserverExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

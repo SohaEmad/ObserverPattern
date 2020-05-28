@@ -12,3 +12,10 @@ protocol BarometerDataConsumerDelegate: Any {
 protocol GPSDataConsumerDelegate: Any {
     func receiveGPSData(gpsData: NZLocation)
 }
+
+protocol RotationDataConsumerDelegate: Any {
+    func receiveRotationData(rotationData: SARotation)
+}
+protocol QuaternionDataConsumerDelegate: Any {
+    func receiveQuaternionData(quaternionData: SAQuaternion)
+}

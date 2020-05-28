@@ -11,11 +11,16 @@ class Manager {
     let accelerometerDataProvider: AccelerometerDataProvider
     let barometricDataProvider: BarometricDataProvider
     let gpsDataProvider: GPSDataProvider
+    let rotationDataProvider: RotationDataProvider
+    let quaternionDataProvider: QuaternionDataProvider
+    
     
     init() {
         self.accelerometerDataProvider = AccelerometerDataProvider(motionManager: self.motionManager)
         self.barometricDataProvider = BarometricDataProvider(altimiter: self.altimeter)
         self.gpsDataProvider = GPSDataProvider(motionManager: self.locationManager)
+        self.rotationDataProvider = RotationDataProvider(motionManager: self.motionManager)
+        self.quaternionDataProvider = QuaternionDataProvider(motionManager: self.motionManager)
     }
     
     func startSystem() {
@@ -23,6 +28,9 @@ class Manager {
         self.accelerometerDataProvider.startDataProvider()
         self.barometricDataProvider.startDataProvider()
         self.gpsDataProvider.startDataProvider()
+        self.rotationDataProvider.startDataProvider()
+        self.quaternionDataProvider.startDataProvider()
+
     }
     
     func requestAccelerometerDataSubscription(subscribeRequester: AccelerometerDataConsumerDelegate) {
@@ -36,4 +44,11 @@ class Manager {
     func requestGPSDataSubscription(subscribeRequester: GPSDataConsumerDelegate) {
         self.gpsDataProvider.gpsDataConsumers.append(subscribeRequester)
     }
+    
+    func requestRotationDataSubscription(subscribeRequester: RotationDataConsumerDelegate) {
+         self.rotationDataProvider.RotationDataConsumers.append(subscribeRequester)
+     }
+    func requestQuaternionDataSubscription(subscribeRequester: QuaternionDataConsumerDelegate) {
+          self.quaternionDataProvider.QuaternionDataConsumers.append(subscribeRequester)
+      }
 }

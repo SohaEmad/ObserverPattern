@@ -1,19 +1,13 @@
 import CoreLocation
 import Foundation
 
-class GPSDataProvider: NSObject, CLLocationManagerDelegate{
-    
-    let locationManager: CLLocationManager?
+class GPSDataProvider: LocationManager{
     
     var gpsDataConsumers: [GPSDataConsumerDelegate] = []
     
     var authorisation: Bool = false
     
-    init(motionManager: CLLocationManager) {
-        self.locationManager = motionManager
-    }
-    
-    func startDataProvider() {
+    override func startDataProvider() {
         // Setting self to receive location updates from the locationManager object
         self.locationManager?.delegate = self
         
@@ -57,4 +51,8 @@ class GPSDataProvider: NSObject, CLLocationManagerDelegate{
         }
         self.authorisation = authorisation
     }
+    override func stopDataProvider(){
+        
+    }
+    
 }

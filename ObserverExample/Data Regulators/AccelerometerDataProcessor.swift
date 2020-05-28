@@ -1,17 +1,12 @@
-import CoreMotion
 import Foundation
+import CoreMotion
 
-class AccelerometerDataProvider{
-    
-    let motionManager: CMMotionManager
-    
+
+class AccelerometerDataProvider: MotionManger{
+        
     var accelerometerDataConsumers: [AccelerometerDataConsumerDelegate] = []
     
-    init(motionManager: CMMotionManager) {
-        self.motionManager = motionManager
-    }
-    
-    func startDataProvider() {
+    override func startDataProvider() {
         self.motionManager.startAccelerometerUpdates(to: OperationQueue.main) { (data, error) in
             guard let data = data else { return }
             // Error handling has been omitted but should be included in this class
@@ -27,4 +22,8 @@ class AccelerometerDataProvider{
             }
         }
     }
+    override func stopDataProvider() {
+    
+    }
+    
 }
